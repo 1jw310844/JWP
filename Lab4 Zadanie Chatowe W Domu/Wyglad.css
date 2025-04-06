@@ -1,0 +1,19 @@
+<Window x:Class="Zadanie_z_chata_Lab_4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zadanie_z_chata_Lab_4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox x:Name="lstLista" Margin="0,0,0,315"/>
+        <Button Content="Pokaż" HorizontalAlignment="Left" Margin="338,344,0,0" VerticalAlignment="Top" Height="44" Width="80" FontSize="18" FontWeight="Bold" Click="Button_Click"/>
+        <Label x:Name="lblDane" Content="" HorizontalAlignment="Center" Margin="0,124,0,0" VerticalAlignment="Top" Height="93" Width="780" FontSize="14"/>
+        <TextBox x:Name="txtModel" HorizontalAlignment="Left" Margin="394,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Jaki model samochodu?" HorizontalAlignment="Left" Margin="252,264,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtModel2" HorizontalAlignment="Left" Margin="394,307,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Jaki model motocyklu?" HorizontalAlignment="Left" Margin="252,303,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
