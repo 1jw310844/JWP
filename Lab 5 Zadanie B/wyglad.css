@@ -7,9 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="txtNumer" HorizontalAlignment="Left" Margin="368,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" Height="30"/>
-        <Label Content="Numer Albumu" HorizontalAlignment="Left" Margin="264,187,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.08,0.021" Width="99" Height="30"/>
-        <Button x:Name="btnSzukaj" Content="Szukaj" HorizontalAlignment="Center" Margin="0,251,0,0" VerticalAlignment="Top" Height="36" Width="94" FontWeight="Bold" Click="btnSzukaj_Click"/>
+        <TextBox x:Name="txtNumer" HorizontalAlignment="Left" Margin="222,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" Height="30"/>
+        <Label Content="Numer Albumu" HorizontalAlignment="Left" Margin="118,218,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.08,0.021" Width="99" Height="30"/>
+        <Button x:Name="btnSzukaj" Content="Szukaj" HorizontalAlignment="Left" Margin="207,282,0,0" VerticalAlignment="Top" Height="36" Width="94" FontWeight="Bold" Click="btnSzukaj_Click"/>
+        <Label x:Name="lblWieksza" Content="" HorizontalAlignment="Left" Margin="130,108,0,0" VerticalAlignment="Top" Height="82" Width="277"/>
+        <Button x:Name="btnSprawdz" Content="Sprawdz ktory" HorizontalAlignment="Left" Margin="449,132,0,0" VerticalAlignment="Top" Height="34" Width="122" Click="btnSprawdz_Click"/>
 
     </Grid>
 </Window>
