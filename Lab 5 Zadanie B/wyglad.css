@@ -1,0 +1,15 @@
+<Window x:Class="Lab_5_Zadanie_B.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_5_Zadanie_B"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="txtNumer" HorizontalAlignment="Left" Margin="368,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" Height="30"/>
+        <Label Content="Numer Albumu" HorizontalAlignment="Left" Margin="264,187,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.08,0.021" Width="99" Height="30"/>
+        <Button x:Name="btnSzukaj" Content="Szukaj" HorizontalAlignment="Center" Margin="0,251,0,0" VerticalAlignment="Top" Height="36" Width="94" FontWeight="Bold" Click="btnSzukaj_Click"/>
+
+    </Grid>
+</Window>
