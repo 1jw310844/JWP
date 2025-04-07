@@ -25,11 +25,13 @@ namespace Lab_5_Zadanie_B
             Student s3 = new Student(320144, "Pawlik", 5.0);
             Student s4 = new Student(311244, "Chorzela", 5.0);
             Student s5 = new Student(000000, "Puk", 2.0);
+            Student s6 = new Student(010101, "Albrecht", 2.0);
             słownikStudentow.Add(s1.NumerAlbumu, s1);
             słownikStudentow.Add(s2.NumerAlbumu, s2);
             słownikStudentow.Add(s3.NumerAlbumu, s3);
             słownikStudentow.Add(s4.NumerAlbumu, s4);
             słownikStudentow.Add(s5.NumerAlbumu, s5);
+            słownikStudentow.Add(s6.NumerAlbumu, s6);
         }
 
         private void btnSzukaj_Click(object sender, RoutedEventArgs e)
@@ -44,6 +46,28 @@ namespace Lab_5_Zadanie_B
             {
                 MessageBox.Show($"Nie znaleziono");
             }
+        }
+
+        private void btnSprawdz_Click(object sender, RoutedEventArgs e)
+        {
+            string str1 = "Kuba";
+            string str2 = "Adi";
+            string wiekszyString = Wiekszy.ZnajdzWiekszy(str1, str2);
+           
+            //MessageBox.Show($"Większy string: {wiekszyString}");
+
+            // Test dla double
+            double d1 = 3.5;
+            double d2 = 4.2;
+            double wiekszyDouble = Wiekszy.ZnajdzWiekszy(d1, d2);
+            //MessageBox.Show($"Większa liczba: {wiekszyDouble}");
+
+            // Test dla Student (porównanie według oceny)
+            Student student1 = new Student(123456, "Nowak", 4.5);
+            Student student2 = new Student(654321, "Kowalski", 5.0);
+            Student wiekszyStudent = Wiekszy.ZnajdzWiekszy(student1, student2);
+            //MessageBox.Show($"Lepszy student: {wiekszyStudent}");
+            lblWieksza.Content = "String: " + wiekszyString + "\nDouble: " + wiekszyDouble + "\nStudent: " + wiekszyStudent;
         }
     }
 }
