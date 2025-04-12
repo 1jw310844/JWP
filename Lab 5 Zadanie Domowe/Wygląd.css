@@ -1,0 +1,14 @@
+<Window x:Class="Lab_5_Zadanie_Domowe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_5_Zadanie_Domowe"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnWyswietl" Content="Wyświetl" HorizontalAlignment="Center" Margin="0,86,0,0" VerticalAlignment="Top" Height="35" Width="206" FontSize="18" FontWeight="Bold" Click="btnWyswietl_Click"/>
+        <ListBox x:Name="lstLista"  Margin="47,155,436,54"/>
+        <ListBox x:Name="lstLista2"  Margin="421,155,62,54"/>
+    </Grid>
+</Window>
