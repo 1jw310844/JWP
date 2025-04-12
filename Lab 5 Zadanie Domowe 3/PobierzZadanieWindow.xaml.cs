@@ -16,9 +16,6 @@ using Klasy1;
 
 namespace Lab_5_Zadanie_Domowe_3
 {
-    /// <summary>
-    /// Logika interakcji dla klasy PobierzZadanieWindow.xaml
-    /// </summary>
     public partial class PobierzZadanieWindow : Window
     {
         public PobierzZadanieWindow(Zadanie zadanie)
