@@ -12,14 +12,13 @@ using Generyki;
 
 namespace Lab_5_Zadanie_B
 {
-    
     public partial class MainWindow : Window
     {
         Dictionary<double, Student> słownikStudentow = new Dictionary<double, Student>();
         public MainWindow()
         {
             InitializeComponent();
-            
+
             Student s1 = new Student(310844, "Wesoły", 5.0);
             Student s2 = new Student(310811, "Szewczyk", 5.0);
             Student s3 = new Student(320144, "Pawlik", 5.0);
@@ -36,8 +35,8 @@ namespace Lab_5_Zadanie_B
 
         private void btnSzukaj_Click(object sender, RoutedEventArgs e)
         {
-           double index = Convert.ToDouble(txtNumer.Text); 
-            if(słownikStudentow.ContainsKey(index))
+            double index = Convert.ToDouble(txtNumer.Text);
+            if (słownikStudentow.ContainsKey(index))
             {
                 Student znaleziony = słownikStudentow[index];
                 MessageBox.Show($"Znaleziono: {znaleziony.Nazwisko}, ocena: {znaleziony.Ocena}");
@@ -53,7 +52,7 @@ namespace Lab_5_Zadanie_B
             string str1 = "Kuba";
             string str2 = "Adi";
             string wiekszyString = Wiekszy.ZnajdzWiekszy(str1, str2);
-           
+
             //MessageBox.Show($"Większy string: {wiekszyString}");
 
             // Test dla double
@@ -63,11 +62,32 @@ namespace Lab_5_Zadanie_B
             //MessageBox.Show($"Większa liczba: {wiekszyDouble}");
 
             // Test dla Student (porównanie według oceny)
-            Student student1 = new Student(123456, "Nowak", 4.5);
-            Student student2 = new Student(654321, "Kowalski", 5.0);
+            Student student1 = new Student(123456, "Szewczyk", 4.5);
+            Student student2 = new Student(654321, "Wesoły", 4.0);
             Student wiekszyStudent = Wiekszy.ZnajdzWiekszy(student1, student2);
             //MessageBox.Show($"Lepszy student: {wiekszyStudent}");
             lblWieksza.Content = "String: " + wiekszyString + "\nDouble: " + wiekszyDouble + "\nStudent: " + wiekszyStudent;
+
+            //Test dla double
+            Regał<double> regałDouble = new Regał<double>();
+            regałDouble.Półka1 = 3.14;
+            regałDouble.WstawNaWolnąPółkę(6.28);
+            regałDouble.WolnaPółka = 9.81;
+
+            // Test dla Student
+            Regał<Student> regałStudent = new Regał<Student>();
+            regałStudent.Półka1 = new Student(111111, "Kowalski", 4.0);
+            regałStudent.WstawNaWolnąPółkę(new Student(222222, "Nowak", 3.5));
+            regałStudent.WolnaPółka = new Student(333333, "Wiśniewski", 5.0);
+
+            //Test dla int
+            Regał<int> regałInt = new Regał<int>();
+            regałInt.Półka1 = 3;
+            regałInt.WstawNaWolnąPółkę(5);
+            regałInt.WolnaPółka = 1;
+
+            // Wyświetlenie wyników
+            lblWieksza2.Content = $"Regał<double>:\n{regałDouble}\n\nRegał<Student>:\n{regałStudent}\n\nRegał<int>:\n{regałInt}";
         }
     }
 }
