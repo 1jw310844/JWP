@@ -38,4 +38,31 @@ namespace Generyki
                 return b;
         }
     }
+
+    public class Regał<T>
+    {
+        public T Półka1 { get; set; } = default!;
+        public T Półka2 { get; set; } = default!;
+        public T Półka3 { get; set; } = default!;
+        public void WstawNaWolnąPółkę(T element)
+        {
+            if (Equals(Półka1, default(T)))
+                Półka1 = element;
+            else if (Equals(Półka2, default(T)))
+                Półka2 = element;
+            else if (Equals(Półka3, default(T)))
+                Półka3 = element;
+        }
+        public T WolnaPółka
+        {
+            set
+            {
+                WstawNaWolnąPółkę(value);
+            }
+        }
+        public override string ToString()
+        {
+            return $"Półka1: {Półka1}\nPółka2: {Półka2}\nPółka3: {Półka3}";
+        }
+    }
 }
