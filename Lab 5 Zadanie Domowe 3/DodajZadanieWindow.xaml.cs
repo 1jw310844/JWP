@@ -14,9 +14,6 @@ using System.Windows.Shapes;
 
 namespace Lab_5_Zadanie_Domowe_3
 {
-    /// <summary>
-    /// Logika interakcji dla klasy DodajZadanieWindow.xaml
-    /// </summary>
     public partial class DodajZadanieWindow : Window
     {
         public string OpisZadania { get; private set; }
