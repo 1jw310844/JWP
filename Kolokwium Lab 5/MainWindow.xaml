@@ -1,0 +1,13 @@
+﻿<Window x:Class="Kolokwium_Wesoły.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kolokwium_Wesoły"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <Button Content="Losuj string" Click="ButtonString_Click" Margin="194,216,194,125"/>
+        <Button Content="Losuj armatę" Click="ButtonArmata_Click" Margin="194,136,194,207"/>
+    </Grid>
+</Window>
