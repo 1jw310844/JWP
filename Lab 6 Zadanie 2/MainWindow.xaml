@@ -1,0 +1,25 @@
+﻿<Window x:Class="Lab_6_Zadanie_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_6_Zadanie_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
+            <Button Content="Towary > 5 szt." Click="Btn1_Click" Margin="5"/>
+            <Button Content="Liczba z kategorii" Click="Btn2_Click" Margin="5"/>
+            <Button Content="Cena > średnia" Click="Btn3_Click" Margin="5"/>
+            <Button Content="Średnia wg kategorii" Click="Btn4_Click" Margin="5"/>
+            <Button Content="Najdroższy towar" Click="Btn5_Click" Margin="5"/>
+        </StackPanel>
+
+        <ListBox x:Name="outputBox" Grid.Row="1" FontSize="14"/>
+    </Grid>
+</Window>
